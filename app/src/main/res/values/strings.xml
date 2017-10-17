@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HabitTracker</string>
+
+    <string name="editor_overview">Overview</string>
+    <string name="editor_calendar">Calendar</string>
+    <string name="editor_reminder">Reminder</string>
+    <string name="editor_hint_name">Habit Name</string>
+    <string name="editor_hint_description">Description</string>
+
+    <string name="menu_editor_save">Save</string>
+    <string name="menu_editor_delete">Delete</string>
+    <string name="menu_catalog_create_dummy">Create Dummy Habit</string>
+    <string name="menu_catalog_delete_all">Delete All Habits</string>
+
+    <string name="day_monday">Mon</string>
+    <string name="day_tuesday">Tue</string>
+    <string name="day_wednesday">Wed</string>
+    <string name="day_thursday">Thu</string>
+    <string name="day_friday">Fri</string>
+    <string name="day_saturday">Sat</string>
+    <string name="day_sunday">Sun</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+</resources>

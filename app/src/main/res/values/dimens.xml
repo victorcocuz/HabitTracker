@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_xsmall">10dp</dimen>
+    <dimen name="text_small">12dp</dimen>
+    <dimen name="text_regular">14dp</dimen>
+    <dimen name="text_large">16dp</dimen>
+
+    <dimen name="margin_regular">8dp</dimen>
+    <dimen name="margin_regular_large">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+
+    <dimen name="container_medium">24dp</dimen>
+    <dimen name="container_large">36dp</dimen>
+</resources>
