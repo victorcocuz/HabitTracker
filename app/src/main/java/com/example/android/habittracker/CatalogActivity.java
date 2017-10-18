@@ -40,17 +40,18 @@ public class CatalogActivity extends AppCompatActivity {
         });
 
         dbHelper = new HabitDbHelper(this);
-        displayDatabaseInfo();
+        displayDatabaseInfo(readDatabaseInfo());
         SQLiteDatabase db = dbHelper.getReadableDatabase();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        displayDatabaseInfo();
+        displayDatabaseInfo(readDatabaseInfo());
     }
 
-    public void displayDatabaseInfo() {
+    public Cursor readDatabaseInfo() {
+
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
         String[] projection = {HabitEntry._ID,
@@ -66,6 +67,10 @@ public class CatalogActivity extends AppCompatActivity {
                 HabitEntry.COLUMN_HABIT_REMINDER};
 
         Cursor cursor = db.query(HabitEntry.TABLE_NAME, projection, null, null, null, null, null);
+        return cursor;
+    }
+
+    public void displayDatabaseInfo(Cursor cursor) {
 
         try {
             TextView displayView = (TextView) findViewById(R.id.habit_text_view);
@@ -134,7 +139,7 @@ public class CatalogActivity extends AppCompatActivity {
         switch (id) {
             case R.id.menu_catalog_dummy:
                 insertHabit();
-                displayDatabaseInfo();
+                displayDatabaseInfo(readDatabaseInfo());
                 return true;
             case R.id.menu_catalog_delete:
                 //delete all;
