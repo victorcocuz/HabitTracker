@@ -23,4 +23,8 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
+    <string name="table_contents">This table contains </string>
+    <string name="dummy_habit_name">Running</string>
+    <string name="dummy_habit_description">Just running around</string>
+
 </resources>

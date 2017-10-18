@@ -83,8 +83,7 @@ public class EditorActivity extends AppCompatActivity {
     }
 
     private void checkboxSetup() {
-        if(habitMonday.isChecked()) {monday = 1;
-        Log.e(LOG_TAG, "niggaaaaaaaaaaaaaa");}
+        if(habitMonday.isChecked()) {monday = 1;}
         if(habitTuesday.isChecked()) {tuesday = 1;}
         if(habitWednesday.isChecked()) {wednesday = 1;}
         if(habitThursday.isChecked()) {thursday = 1;}

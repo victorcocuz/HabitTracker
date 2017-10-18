@@ -74,7 +74,7 @@ public class CatalogActivity extends AppCompatActivity {
 
         try {
             TextView displayView = (TextView) findViewById(R.id.habit_text_view);
-            displayView.setText("This table contains " + cursor.getCount() + " entries.\n\n");
+            displayView.setText(getString(R.string.table_contents) + cursor.getCount() + " entries.\n\n");
             displayView.append(HabitEntry._ID + "\t"
                     + HabitEntry.COLUMN_HABIT_NAME + "\t"
                     + HabitEntry.COLUMN_HABIT_DESCRIPTION + "\t"
@@ -112,8 +112,8 @@ public class CatalogActivity extends AppCompatActivity {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(HabitEntry.COLUMN_HABIT_NAME, "running");
-        values.put(HabitEntry.COLUMN_HABIT_DESCRIPTION, "just running around");
+        values.put(HabitEntry.COLUMN_HABIT_NAME, getString(R.string.dummy_habit_name));
+        values.put(HabitEntry.COLUMN_HABIT_DESCRIPTION, getString(R.string.dummy_habit_description));
         values.put(HabitEntry.COLUMN_HABIT_MONDAY, HabitEntry.DAY_NO);
         values.put(HabitEntry.COLUMN_HABIT_TUESDAY, HabitEntry.DAY_NO);
         values.put(HabitEntry.COLUMN_HABIT_WEDNESDAY, HabitEntry.DAY_YES);
